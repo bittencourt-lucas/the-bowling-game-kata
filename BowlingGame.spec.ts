@@ -45,5 +45,10 @@ describe('The Bowling Game Kata', () => {
     g.roll(4);
     rollMany(16, 0);
     expect(g.score()).toBe(24);
-  })
+  });
+
+  it('should roll a perfect game', () => {
+    rollMany(12, 10);
+    expect(g.score()).toBe(300);
+  });
 });
