@@ -23,11 +23,11 @@ describe("The Bowling Game Kata", () => {
     expect(g.score()).toBe(20);
   });
 
-  // it('should roll a spare', () => {
-  //   g.roll(5);
-  //   g.roll(5); // spare
-  //   g.roll(3);
-  //   rollMany(17, 0);
-  //   expect(g.score()).toBe(16);
-  // });
+  it('should roll a spare', () => {
+    g.roll(5);
+    g.roll(5); // spare
+    g.roll(3);
+    rollMany(17, 0);
+    expect(g.score()).toBe(16);
+  });
 });
