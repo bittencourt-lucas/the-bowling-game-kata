@@ -8,6 +8,10 @@ function rollMany(n: number, pins: number): void {
   }
 }
 
+function rollStrike(): void {
+  g.roll(10);
+}
+
 function rollSpare(): void {
   g.roll(5);
   g.roll(5);
@@ -36,7 +40,7 @@ describe('The Bowling Game Kata', () => {
   });
 
   it('should roll a strike', () => {
-    g.roll(10); // strike
+    rollStrike();
     g.roll(3);
     g.roll(4);
     rollMany(16, 0);
