@@ -1,0 +1,7 @@
+{
+  "name": "the-bowling-game-kata",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Lucas C. A. Bittencourt <lucascafieiro@gmail.com>",
+  "license": "MIT"
+}
