@@ -8,6 +8,11 @@ function rollMany(n: number, pins: number): void {
   }
 }
 
+function rollSpare(): void {
+  g.roll(5);
+  g.roll(5);
+}
+
 describe("The Bowling Game Kata", () => {
   beforeEach(() => {
     g = new Game();
@@ -24,8 +29,7 @@ describe("The Bowling Game Kata", () => {
   });
 
   it('should roll a spare', () => {
-    g.roll(5);
-    g.roll(5); // spare
+    rollSpare();
     g.roll(3);
     rollMany(17, 0);
     expect(g.score()).toBe(16);
