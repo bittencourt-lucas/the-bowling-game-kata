@@ -13,7 +13,7 @@ function rollSpare(): void {
   g.roll(5);
 }
 
-describe("The Bowling Game Kata", () => {
+describe('The Bowling Game Kata', () => {
   beforeEach(() => {
     g = new Game();
   });
@@ -34,4 +34,12 @@ describe("The Bowling Game Kata", () => {
     rollMany(17, 0);
     expect(g.score()).toBe(16);
   });
+
+  it('should roll a strike', () => {
+    g.roll(10); // strike
+    g.roll(3);
+    g.roll(4);
+    rollMany(16, 0);
+    expect(g.score()).toBe(24);
+  })
 });
